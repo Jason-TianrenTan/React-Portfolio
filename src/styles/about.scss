@@ -56,6 +56,26 @@
   }
 }
 
+button {
+    text-decoration: none;
+    padding: 0px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-style: italic;
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .active {
+    color: black;
+  }
+
 .avatar {
     border-radius: 50%;
     width: 520px;
