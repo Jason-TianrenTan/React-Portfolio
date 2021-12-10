@@ -130,18 +130,17 @@ export default {
   aboutParaThree:
     "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   aboutImage: avatar,
-  timelines: {
-    '2010': 'Start coding, beginning with C++ using Visual C++ 6.0',
-    '2012': 'NOIP2012 (Junior Group) Second Prize',
-    '2013': 'Individually developed a TCP multi-user group chat app (Java), supporting rich text format and file transfer',
-    '2014': 'NOIP2015 (Senior Group) Second Prize',
-    '2015': 'ID Tech Summer Camp at UC Irvine, developed a turned-based RPG battle game',
-    '2016.9': 'Joined Microsoft Student Club (MSC) and Ziqiang Studio in Wuhan University',
-    '2016.11': 'First Hackathon in MSC, developed a bullet-chat based screen reminder. Leaded a small team of three and won first prize.',
-    '2017.7': 'Developed CCoupons (Android), an online peer-to-peer coupon exchange platform, won \'Best Mobile App Design\' and Third prize for the 13th Citi Cup Financial Application Development Contest.',
-    '2018.2': 'Honorable Mention in MCM/ICM, developing a prediction model of global population distribution for the next 50 years',
-    '2018.7': 'Harvard Summer School, '
-    },
+  timelines: [
+    {time: '2010', title: 'Start coding at age 12', description: 'Beginning with C++ using Visual C++ 6.0', subtitle:'C++'},
+    {time: '2013', title: 'Multi-user Group Chat', description: 'Individually developed a TCP C/S framework multi-user group chat app, supporting rich text format and file transfer', subtitle:'Java, TCP/IP'},
+    {time: '2014', title: 'NOIP2015 Second Prize', description: 'Senior Group, ranked #82 in Beijing', subtitle:'C++, Algorithms'},
+    {time: '2015', title: 'ID Tech Summer Camp', description: 'At UC Irvine, developed a turned-based RPG battle game', subtitle:'Java, OOP, Algortihms'},
+    {time: '2016.9', title: 'Microsoft Student Club (MSC)', description: 'Joined MSC in Wuhan University', subtitle:'Microsoft, Tech'},
+    {time: '2016.11', title: 'First Hackathon in MSC', description: 'Developed a bullet-chat based screen reminder. Leaded a small team of three and won first prize.', subtitle:'Teamwork, Java, Desktop Development'},
+    {time: '2017.7', title: 'CCoupons', description:'An online peer-to-peer coupon exchange platform, won \'Best Mobile App Design\' and Third prize for the 13th Citi Cup Financial Application Development Contest.', subtitle:'Android, RxAndroid, OkHttp, Retrofit, ButterKnife, Financial Development'},
+    {time: '2018.2', title: 'Honorable Mention in MCM/ICM', description: 'developing a prediction model of global population distribution for the next 50 years', subtitle:'Teamwork, Matlab, Modeling, LateX'},
+    {time: '2018.7', title: 'Harvard Summer School', description: 'CSCI S-73 Developing Cross-Platform Mobile Apps with Xamarin. Developed a cross-platform mobile application MBTAManager, providing travelling information, alerts and schedule optimizations in Boston. Received high compliments from Miguel De Icaza, a well known SDE I\'ve always admired.', subtitle:'C#, Xamarin, Mobile Development'}
+  ],
 
   //   End About Section ---------------------
 
