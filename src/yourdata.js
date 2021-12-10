@@ -17,8 +17,15 @@ import avatar from "./images/avatar.jpg"
 //Logo
 import logoImg from "./images/logo.png";
 import logoSmallImg from "./images/logo-small.png";
-import resumeImg from './images/resume.png';
+import resumeImg from './images/about/resume.png';
 
+//About Icons
+import aboutCodingIcon from "./images/about/coding.png";
+import aboutAndroidIcon from "./images/about/android.png";
+import aboutClubIcon from "./images/about/pantone.png";
+import aboutMathIcon from "./images/about/data.png";
+import aboutHarvardIcon from "./images/about/app-development";
+import meIcon from "./images/about/man.png";
 
 export default {
 
@@ -124,6 +131,8 @@ export default {
 
   // About Secton --------------
   resumeLogo: resumeImg,
+  codingLogo: aboutCodingIcon,
+  meLogo: meIcon,
   aboutParaOne: "",
   aboutParaTwo:
     "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -131,16 +140,17 @@ export default {
     "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   aboutImage: avatar,
   timelines: [
-    {time: '2010', title: 'Start coding at age 12', description: 'Beginning with C++ using Visual C++ 6.0', subtitle:'C++'},
-    {time: '2013', title: 'Multi-user Group Chat', description: 'Individually developed a TCP C/S framework multi-user group chat app, supporting rich text format and file transfer', subtitle:'Java, TCP/IP'},
-    {time: '2014', title: 'NOIP2015 Second Prize', description: 'Senior Group, ranked #82 in Beijing', subtitle:'C++, Algorithms'},
-    {time: '2015', title: 'ID Tech Summer Camp', description: 'At UC Irvine, developed a turned-based RPG battle game', subtitle:'Java, OOP, Algortihms'},
-    {time: '2016.9', title: 'Microsoft Student Club (MSC)', description: 'Joined MSC in Wuhan University', subtitle:'Microsoft, Tech'},
-    {time: '2016.11', title: 'First Hackathon in MSC', description: 'Developed a bullet-chat based screen reminder. Leaded a small team of three and won first prize.', subtitle:'Teamwork, Java, Desktop Development'},
-    {time: '2017.7', title: 'CCoupons', description:'An online peer-to-peer coupon exchange platform, won \'Best Mobile App Design\' and Third prize for the 13th Citi Cup Financial Application Development Contest.', subtitle:'Android, RxAndroid, OkHttp, Retrofit, ButterKnife, Financial Development'},
-    {time: '2018.2', title: 'Honorable Mention in MCM/ICM', description: 'developing a prediction model of global population distribution for the next 50 years', subtitle:'Teamwork, Matlab, Modeling, LateX'},
-    {time: '2018.7', title: 'Harvard Summer School', description: 'CSCI S-73 Developing Cross-Platform Mobile Apps with Xamarin. Developed a cross-platform mobile application MBTAManager, providing travelling information, alerts and schedule optimizations in Boston. Received high compliments from Miguel De Icaza, a well known SDE I\'ve always admired.', subtitle:'C#, Xamarin, Mobile Development'}
+    {time: '2010', title: 'Start coding at age 12', description: 'Beginning with C++ using Visual C++ 6.0', badges:['C++']},
+    {time: '2013.01', title: 'Multi-user Group Chat', description: 'Individually developed a TCP C/S framework multi-user group chat app, supporting rich text format and file transfer', badges:['Java','TCP/IP']},
+    {time: '2014.11', title: 'NOIP2015 Second Prize', description: 'Senior Group, ranked #82 in Beijing', badges:['C++', 'Algorithms']},
+    {time: '2015.06 - 2015.07', title: 'ID Tech Summer Camp', description: 'At UC Irvine, developed a turned-based RPG battle game', badges:['Java', 'OOP', 'Algortihms']},
+    {time: '2016.09', title: 'Microsoft Student Club (MSC)', description: 'Joined MSC in Wuhan University', badges:['Microsoft', 'Tech'], icon: aboutClubIcon},
+    {time: '2016.11', title: 'First Hackathon in MSC', description: 'Developed a bullet-chat based screen reminder. Leaded a small team of three and won first prize.', badges:['Teamwork', 'Java', 'Desktop Development']},
+    {time: '2017.07 - 2017.12', title: 'Online Coupon Exchange Platform', description:'An online peer-to-peer coupon exchange platform, won \'Best Mobile App Design\' and Third prize for the 13th Citi Cup Financial Application Development Contest.', badges:['Android', 'RxAndroid', 'OkHttp', 'Retrofit', 'ButterKnife','Financial Development'], icon: aboutAndroidIcon},
+    {time: '2018.01 - 2018.02', title: 'Honorable Mention in MCM/ICM', description: 'developing a prediction model of global population distribution for the next 50 years', badges:['Teamwork', 'Matlab', 'Modeling', 'LateX'], icon: aboutMathIcon},
+    {time: '2018.07 - 2018.08', title: 'Harvard Summer School', description: 'CSCI S-73 Developing Cross-Platform Mobile Apps with Xamarin. Developed a cross-platform mobile application MBTAManager, providing travelling information, alerts and schedule optimizations in Boston. Received high compliments from Miguel De Icaza, a well known SDE I\'ve always admired.', badges:['C#', 'Xamarin', 'Cross-Platform Development'], icon: aboutHarvardIcon}
   ],
+  
 
   //   End About Section ---------------------
 

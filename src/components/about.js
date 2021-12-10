@@ -4,7 +4,7 @@ import data from "../yourdata"
 import SyntaxHighlighter from "react-syntax-highlighter"
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import TimeLine from "./TimeLine"
+
 
 function getElapsedAge() {
   let birth = Date.parse("1/22/1998")
@@ -65,7 +65,6 @@ const About = () => {
               <br></br>
               {data.aboutParaThree}
             </p>
-            <TimeLine />
           </div>
           <div className="image-wrapper">
             <img className="avatar" src={data.aboutImage} alt="about"></img>

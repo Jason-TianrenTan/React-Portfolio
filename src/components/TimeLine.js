@@ -8,26 +8,38 @@ import "react-vertical-timeline-component/style.min.css"
 
 const TimeLine = () => {
   const timelineItems = data.timelines.map(event => {
-      return (
-    <VerticalTimelineElement
-      className="vertical-timeline-element--work"
-      contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-      date={event.time}
-      iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-    >
-      <h3 className="vertical-timeline-element-title">{event.title}</h3>
-      <h4 className="vertical-timeline-element-subtitle">{event.subtitle}</h4>
-      <p>{event.description}</p>
-    </VerticalTimelineElement>)
-  });
-  return (
-    <VerticalTimeline>
-        {timelineItems}
+    return (
       <VerticalTimelineElement
-        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-      />
-    </VerticalTimeline>
+        className="vertical-timeline-element--work"
+        contentStyle={{ background: "#fff", color: "#000", boxShadow: "none"}}
+        contentArrowStyle={{ borderRight: "10px solid  #fff" }}
+        date={<div className="vertical-date">{event.time}</div>}
+        iconStyle={{ background: "transparent", boxShadow: "none" }}
+        icon={<img className="aboutIcon" src={event.icon ? event.icon : data.codingLogo} />}
+      >
+        <h3 className="vertical-timeline-element-title custom-timeline-title">{event.title}</h3>
+        {event.badges.map(badge => {
+            return (
+                <h4 className="vertical-timeline-element-subtitle experience-badge mr-2 mb-2 badge badge-pill">{badge}</h4>
+            )
+        })}
+        
+        <p>{event.description}</p>
+      </VerticalTimelineElement>
+    )
+  })
+
+  return (
+    <div className="timeline-div">
+      <VerticalTimeline>
+        {timelineItems}
+        <VerticalTimelineElement
+           iconStyle={{ background: "transparent", boxShadow: "none" }}
+           icon={<img className="meIcon" src={data.meLogo} />}
+           date={<div className="vertical-date">{"Present"}</div>}
+        />
+      </VerticalTimeline>
+    </div>
   )
 }
 
