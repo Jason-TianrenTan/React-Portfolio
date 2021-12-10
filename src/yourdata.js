@@ -17,6 +17,8 @@ import avatar from "./images/avatar.jpg"
 //Logo
 import logoImg from "./images/logo.png";
 import logoSmallImg from "./images/logo-small.png";
+import resumeImg from './images/resume.png';
+
 
 export default {
 
@@ -121,6 +123,7 @@ export default {
   // End Work Section -----------------------
 
   // About Secton --------------
+  resumeLogo: resumeImg,
   aboutParaOne: "",
   aboutParaTwo:
     "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",

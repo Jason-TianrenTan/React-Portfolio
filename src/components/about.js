@@ -28,7 +28,7 @@ const About = () => {
             <Fade bottom cascade>
               <h1>About Me</h1>
             </Fade>
-            <p>For more information, check out my <button onClick={() => scrollTo("#resume")}>Resume</button></p>
+            <p>For more information, check out my <button onClick={() => scrollTo("#resume")}>Resume <img className="smallLogo" src={data.resumeLogo}/></button></p>
             <p>
               <SyntaxHighlighter language="java" style={docco}>
                 {`class Me {
