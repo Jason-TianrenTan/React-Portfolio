@@ -129,8 +129,19 @@ export default {
     "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
   aboutParaThree:
     "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  aboutImage:
-    avatar,
+  aboutImage: avatar,
+  timelines: {
+    '2010': 'Start coding, beginning with C++ using Visual C++ 6.0',
+    '2012': 'NOIP2012 (Junior Group) Second Prize',
+    '2013': 'Individually developed a TCP multi-user group chat app (Java), supporting rich text format and file transfer',
+    '2014': 'NOIP2015 (Senior Group) Second Prize',
+    '2015': 'ID Tech Summer Camp at UC Irvine, developed a turned-based RPG battle game',
+    '2016.9': 'Joined Microsoft Student Club (MSC) and Ziqiang Studio in Wuhan University',
+    '2016.11': 'First Hackathon in MSC, developed a bullet-chat based screen reminder. Leaded a small team of three and won first prize.',
+    '2017.7': 'Developed CCoupons (Android), an online peer-to-peer coupon exchange platform, won \'Best Mobile App Design\' and Third prize for the 13th Citi Cup Financial Application Development Contest.',
+    '2018.2': 'Honorable Mention in MCM/ICM, developing a prediction model of global population distribution for the next 50 years',
+    '2018.7': 'Harvard Summer School, '
+    },
 
   //   End About Section ---------------------
 

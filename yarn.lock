@@ -3526,6 +3526,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
@@ -11148,6 +11153,11 @@ react-hot-loader@^4.12.21:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
+react-intersection-observer@^8.26.2:
+  version "8.33.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.33.0.tgz#e1ba72c9b28f1a02143870265f77d84aac450dbd"
+  integrity sha512-slsqrtsUhHT01aySxAcY0JcjLRdVJOwatKeyk5r4IQ9c8SU+x1mKr1kPxwElYHRCIbHS7t2KD15/4/FzNJGUNg==
+
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -11193,6 +11203,15 @@ react-syntax-highlighter@^15.4.5:
     lowlight "^1.17.0"
     prismjs "^1.25.0"
     refractor "^3.2.0"
+
+react-vertical-timeline-component@^3.5.2:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.5.2.tgz#fd2c34e130176f5c1f10e2e3468c14a1d74a7453"
+  integrity sha512-Wcb85NUvmygLFF45bfxVGU4AyHOBjdQY9IqB8uLG1jXWvIthkQft1ZJOGirIlYHSYnDl9sOs8ItL1sNtqA7GUg==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+    react-intersection-observer "^8.26.2"
 
 react@^16.12.0:
   version "16.14.0"

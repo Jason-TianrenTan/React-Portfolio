@@ -4,21 +4,22 @@ import data from "../yourdata"
 import SyntaxHighlighter from "react-syntax-highlighter"
 import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import TimeLine from "./TimeLine"
 
 function getElapsedAge() {
-  let birth = Date.parse("1/22/1998");
-  let age = Date.now() - birth;
-  return (age / (365 * 86400 * 1000)).toFixed(9);
+  let birth = Date.parse("1/22/1998")
+  let age = Date.now() - birth
+  return (age / (365 * 86400 * 1000)).toFixed(9)
 }
 
 const About = () => {
   const [age, setAge] = useState(23.0)
   useEffect(() => {
-      const timer = setTimeout(() => {
-          setAge(getElapsedAge());
-      }, 200)
-      return () => clearTimeout(timer)
-  });
+    const timer = setTimeout(() => {
+      setAge(getElapsedAge())
+    }, 200)
+    return () => clearTimeout(timer)
+  })
 
   return (
     <div className="secion" id="about">
@@ -28,10 +29,15 @@ const About = () => {
             <Fade bottom cascade>
               <h1>About Me</h1>
             </Fade>
-            <p>For more information, check out my <button onClick={() => scrollTo("#resume")}>Resume <img className="smallLogo" src={data.resumeLogo}/></button></p>
             <p>
-              <SyntaxHighlighter language="java" style={docco}>
-                {`class Me {
+              For more information, check out my{" "}
+              <button onClick={() => scrollTo("#resume")}>
+                Resume <img className="smallLogo" src={data.resumeLogo} />
+              </button>
+            </p>
+
+            <SyntaxHighlighter language="java" style={docco}>
+              {`class Me {
         //Basic Info
         name = "Tianren Tan";
         preferredName = "Jason";
@@ -50,7 +56,8 @@ const About = () => {
     
         //For more please check out my resume
     }`}
-              </SyntaxHighlighter>
+            </SyntaxHighlighter>
+            <p>
               <br></br>
               <br></br>
               {data.aboutParaTwo}
@@ -58,6 +65,7 @@ const About = () => {
               <br></br>
               {data.aboutParaThree}
             </p>
+            <TimeLine />
           </div>
           <div className="image-wrapper">
             <img className="avatar" src={data.aboutImage} alt="about"></img>
