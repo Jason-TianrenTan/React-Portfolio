@@ -28,15 +28,6 @@ const About = () => {
             <Fade bottom cascade>
               <h1>About Me</h1>
             </Fade>
-            {/* hobbies = ["Movies", 
-                    "Table Tennis", 
-                    "Go (board game)", 
-                    "Coding", 
-                    "Legos"]
-                    
-        careerGoals = "Build better software or platforms that make everyone's lives easier"
-             */}
-
             <p>
               {data.aboutParaOne}
               <br></br>

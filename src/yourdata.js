@@ -26,6 +26,9 @@ import aboutClubIcon from "./images/about/pantone.png";
 import aboutMathIcon from "./images/about/data.png";
 import aboutHarvardIcon from "./images/about/app-development.png";
 import meIcon from "./images/about/man.png";
+import mscIcon from "./images/about/microsoft.png";
+import certikIcon from "./images/about/data-analysis.png";
+import alibabaIcon from "./images/about/web-development.png";
 
 export default {
 
@@ -148,7 +151,10 @@ export default {
     {time: '2016.11', title: 'First Hackathon in MSC', description: 'Developed a bullet-chat based screen reminder. Leaded a small team of three and won first prize.', badges:['Teamwork', 'Java', 'Desktop Development']},
     {time: '2017.07 - 2017.12', title: 'Online Coupon Exchange Platform', description:'An online peer-to-peer coupon exchange platform, won \'Best Mobile App Design\' and Third prize for the 13th Citi Cup Financial Application Development Contest.', badges:['Android', 'RxAndroid', 'OkHttp', 'Retrofit', 'ButterKnife','Financial Development'], icon: aboutAndroidIcon},
     {time: '2018.01 - 2018.02', title: 'Honorable Mention in MCM/ICM', description: 'developing a prediction model of global population distribution for the next 50 years', badges:['Teamwork', 'Matlab', 'Modeling', 'LateX'], icon: aboutMathIcon},
-    {time: '2018.07 - 2018.08', title: 'Harvard Summer School', description: 'CSCI S-73 Developing Cross-Platform Mobile Apps with Xamarin. Developed a cross-platform mobile application MBTAManager, providing travelling information, alerts and schedule optimizations in Boston. Received high compliments from Miguel De Icaza, a well known SDE I\'ve always admired.', badges:['C#', 'Xamarin', 'Cross-Platform Development'], icon: aboutHarvardIcon}
+    {time: '2018.07 - 2018.08', title: 'Harvard Summer School', description: 'CSCI S-73 Developing Cross-Platform Mobile Apps with Xamarin. Developed a cross-platform mobile application MBTAManager, providing travelling information, alerts and schedule optimizations in Boston. Received high compliments from Miguel De Icaza, a well known SDE I\'ve always admired.', badges:['C#', 'Xamarin', 'Cross-Platform Development'], icon: aboutHarvardIcon},
+    {time: '2018.09 - 2019.06', title: 'MSC Vice President of Technology', description: 'Organized Tech-Salons for knowledge sharing. Also organizing and supervising school-wide Hackathon. Provided technical support for software development/optimization.', badges: ['Leadership', 'Tech', 'Communication'], icon: mscIcon},
+    {time: '2019.06 - 2019.08', title: 'Frontend Internship at CertiK', description: 'Developed a Google Chrome plug-in for peer point testing in the CertiK Testnet using JavaScript and CSS. Developed and restructured company webpage using React, deployed with Gatsby and Netlify.', badges: ['JS', 'React', 'Chrome', 'CSS', 'WebDev'], icon: certikIcon},
+    {time: '2020.09 - 2020.11', title: 'Software Development Co-op at Alibaba', description: 'Individually designed and realized frontend and backend of a data analysis subpage. Implemented Koa.js for data retrieval to apply a light-weighted but high efficent design.', badges: ['JS', 'Node.js', 'Vue.js', 'Koa.js'], icon: alibabaIcon}
   ],
   
 
