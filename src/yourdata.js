@@ -24,7 +24,7 @@ import aboutCodingIcon from "./images/about/coding.png";
 import aboutAndroidIcon from "./images/about/android.png";
 import aboutClubIcon from "./images/about/pantone.png";
 import aboutMathIcon from "./images/about/data.png";
-import aboutHarvardIcon from "./images/about/app-development";
+import aboutHarvardIcon from "./images/about/app-development.png";
 import meIcon from "./images/about/man.png";
 
 export default {
@@ -133,11 +133,11 @@ export default {
   resumeLogo: resumeImg,
   codingLogo: aboutCodingIcon,
   meLogo: meIcon,
-  aboutParaOne: "",
+  aboutParaOne: "Hi there! I'm Tianren Tan, you can call me Jason.",
   aboutParaTwo:
-    "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "I’m currently a grad student at UC Irvine majoring in Software Engineering. I received my Bachelors degree in SWE at Wuhan University, China. I’ve always had a strong passion in building stuff since a child, and I’ve always been fascinated by the countless possibilities we can realize with computers. I’m highly motivated with my work and receptive to new ideas. ",
   aboutParaThree:
-    "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "I have prior experience in Java, JS, React, Vue and many more. My goal is to become a full-stack engineer, right now I’m actively seeking summer internships and fulltime position.",
   aboutImage: avatar,
   timelines: [
     {time: '2010', title: 'Start coding at age 12', description: 'Beginning with C++ using Visual C++ 6.0', badges:['C++']},
@@ -225,7 +225,7 @@ export default {
   contactSubHeading: "Let's create your next experience together",
   social: [
     // Add Or Remove The Link Accordingly
-    { img: githubIcon, url: "https://github.com/chetanverma16" }
+    { img: githubIcon, url: "https://github.com/Jason-TianrenTan" }
   ],
 
   // End Contact Section ---------------

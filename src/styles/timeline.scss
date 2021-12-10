@@ -1,52 +1,54 @@
-.aboutIcon {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.meIcon {
-    width: 120px;
-}
-
-.vertical-date {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.timeline-div {
+.timeline-container {
+    margin-top: 10vh;
     background-color: #ACCFC5;
+    h1 {
+      padding-top: 2.5rem;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 20px;
+    }
+    .vertical-date {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .aboutIcon {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .meIcon {
+        width: 120px;
+    }
+    
+    .custom-timeline-title {
+        font-size: 1.75rem;
+    }
+    
+    .experience-badge {
+        font-size: 1.2rem;
+        background-color: #AE944F;
+        color: #000;
+        margin-right: 0.5rem !important;
+    }
+    
+    .badge {
+        display: inline-block;
+        padding: 0.25em 0.4em;
+        font-family:'Carrara';
+        font-weight: lighter;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0.25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    
+    .badge-pill {
+        padding-right: 0.6em;
+        padding-left: 0.6em;
+        border-radius: 10rem;
+    }
+    
 }
-
-.custom-timeline-title {
-    font-size: 1.75rem;
-}
-
-.experience-badge {
-    font-size: 1.2rem;
-    background-color: #AE944F;
-    color: #000;
-    margin-right: 0.5rem !important;
-}
-
-.badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-family:'Carrara';
-    font-weight: lighter;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.badge-pill {
-    padding-right: 0.6em;
-    padding-left: 0.6em;
-    border-radius: 10rem;
-}
-
-@font-face {
-    font-family: 'Carrara';
-    src: url('./fonts/Carrara-Light.ttf') format('truetype');
-  }

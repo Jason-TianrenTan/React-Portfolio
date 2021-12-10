@@ -3,6 +3,7 @@ import Fade from "react-reveal/Fade"
 import data from "../yourdata"
 
 const Promotion = () => {
+    
   return (
     <div className="section">
       <div className="container">

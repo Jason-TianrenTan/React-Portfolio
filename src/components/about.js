@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react"
 import Fade from "react-reveal/Fade"
 import data from "../yourdata"
 import SyntaxHighlighter from "react-syntax-highlighter"
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
+import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs"
 import scrollTo from "gatsby-plugin-smoothscroll"
-
 
 function getElapsedAge() {
   let birth = Date.parse("1/22/1998")
@@ -22,48 +21,39 @@ const About = () => {
   })
 
   return (
-    <div className="secion" id="about">
+    <div className="section" id="about">
       <div className="container">
         <div className="about-section">
           <div className="content">
             <Fade bottom cascade>
               <h1>About Me</h1>
             </Fade>
-            <p>
-              For more information, check out my{" "}
-              <button onClick={() => scrollTo("#resume")}>
-                Resume <img className="smallLogo" src={data.resumeLogo} />
-              </button>
-            </p>
+            {/* hobbies = ["Movies", 
+                    "Table Tennis", 
+                    "Go (board game)", 
+                    "Coding", 
+                    "Legos"]
+                    
+        careerGoals = "Build better software or platforms that make everyone's lives easier"
+             */}
 
-            <SyntaxHighlighter language="java" style={docco}>
-              {`class Me {
-        //Basic Info
-        name = "Tianren Tan";
-        preferredName = "Jason";
-        age = ${getElapsedAge()};
-    
-        //Education
-        currentSchool = new School("University of California, Irvine", 
-            time = { from: "2021.9", to: "2022.12"});
-        previousSchool = new School("Wuhan University", 
-            time = { from : "2016.9", to: "2020.6"});
-    
-        //a little about me
-        hobbies = ["Movies", "Table Tennis", "Go (board game)", "Coding", "Legos"]
-        careerGoals = ["Build better software or platforms that make everyone's lives easier",
-             "Still figuring out next steps..."]
-    
-        //For more please check out my resume
-    }`}
-            </SyntaxHighlighter>
             <p>
+              {data.aboutParaOne}
+              <br></br>
+              I am <span className="age-span">{getElapsedAge()}</span> years old.
               <br></br>
               <br></br>
               {data.aboutParaTwo}
               <br></br>
               <br></br>
               {data.aboutParaThree}
+            </p>
+
+            <p>
+              For more information, check out my{" "}
+              <button onClick={() => scrollTo("#resume")}>
+                Resume <img className="smallLogo" src={data.resumeLogo} />
+              </button>
             </p>
           </div>
           <div className="image-wrapper">

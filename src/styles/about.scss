@@ -28,11 +28,13 @@
     h1 {
       font-size: 3rem;
       line-height: 20px;
+      font-family: "Squid Game";
       @include media(">=tablet", "<desktop") {
         text-align: center;
       }
     }
     p {
+      line-height: 1.8;
       @include media(">=tablet", "<desktop") {
         text-align: center;
       }
@@ -59,9 +61,15 @@
   }
 
   .smallLogo {
-      height: 1.2em;
-      margin: 0;
-      vertical-align: middle;
+    height: 1.2em;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .age-span {
+    display: inline-block;
+    width: 100px;
+    padding-right: 5px;
   }
 
   .image-wrapper {
@@ -83,7 +91,6 @@
 }
 
 .avatar {
-    border-radius: 50%;
-    width: 520px;
+  border-radius: 50%;
+  width: 520px;
 }
-
