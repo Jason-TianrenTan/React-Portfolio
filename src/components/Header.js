@@ -9,22 +9,14 @@ const Header = () => {
         <div className="header-wrapper">
           <Fade bottom cascade>
             <div className="heading-wrapper">
-              <h1>
-                {data.headerTagline[0]}
-              </h1>
-              <img className="headerLogo" src={data.logos.logo}/>
+              <h1>{data.headerTagline[0]}</h1>
             </div>
           </Fade>
           <Fade bottom>
             <p>{data.headerParagraph}</p>
           </Fade>
           <Fade bottom>
-            <a
-              href={`mailto:${
-                data.contactEmail
-              }`}
-              className="primary-btn"
-            >
+            <a href={`mailto:${data.contactEmail}`} className="primary-btn">
               CONNECT WITH ME
             </a>
           </Fade>

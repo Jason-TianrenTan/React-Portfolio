@@ -28,7 +28,6 @@
     h1 {
       font-size: 3rem;
       line-height: 20px;
-      font-family: "Squid Game";
       @include media(">=tablet", "<desktop") {
         text-align: center;
       }

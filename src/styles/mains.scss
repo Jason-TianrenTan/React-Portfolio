@@ -15,8 +15,12 @@
 @import "./footer.scss";
 @import "./timeline.scss";
 
-* {
-  font-family: "Montserrat";
+*:not(span) {
+  font-family: "Quattrocento";
+}
+
+h1 {
+    font-family: 'Cinzel';
 }
 
 body {
@@ -66,4 +70,14 @@ body {
 @font-face {
     font-family: 'Squid Game';
     src: url('./fonts/Game of Squids.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Quattrocento';
+    src: url('./fonts/Quattrocento-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('./fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
 }
