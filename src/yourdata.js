@@ -9,6 +9,8 @@ import androidIcon from "./images/skills/android.png"
 import javaIcon from "./images/skills/java.png"
 import nodejsIcon from "./images/skills/node-js.png"
 import vuejsIcon from "./images/skills/vue-js.png"
+import mySQLIcon from "./images/skills/mysql.png";
+import springIcon from "./images/skills/spring-boot.png";
 
 // Social Icon
 import githubIcon from "./images/skills/github.svg"
@@ -29,6 +31,12 @@ import meIcon from "./images/about/man.png";
 import mscIcon from "./images/about/microsoft.png";
 import certikIcon from "./images/about/data-analysis.png";
 import alibabaIcon from "./images/about/web-development.png";
+
+//Project Images
+import openCVCover from "./images/projects/OpenCV.jpg";
+import xamarinCover from "./images/projects/Xamarin.jpg";
+import xamarinLogoCover from "./images/projects/xamarin-logo.png";
+import codeCover from "./images/projects/carbon.png";
 
 export default {
 
@@ -58,26 +66,50 @@ export default {
       para:
         "A code implementation based on As Projective As Possible Image Stitching with Moving DLT", 
       imageSrc:
-        "https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1987&q=80",
+        openCVCover,
       url: "https://github.com/Jason-TianrenTan/APAP-Processor",
+      tags: ['C++', 'OpenCV', 'Eigen']
     },
     {
       title: "U-Coupons",
       para:
-        "A peer-to-peer online coupon exchange platform", 
+        "A peer-to-peer online coupon exchange platform. Prize winner of \"Best Mobile Application\" for the 13th Citi Financial Innovation and Application Competition.", 
       imageSrc:
         "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       url: "https://github.com/Jason-TianrenTan/U-Coupons",
+      tags: ['Android', 'RxJava', 'Retrofit', 'OkHttp', 'ButterKnife']
     },
     {
       title: "MBTA Manager", 
       para:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", 
+        "A cross platform mobile application providing travelling information, alerts and schedule optimizations in Boston.", 
       imageSrc:
-        "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-      url: "http://chetanverma.com/",
+        xamarinLogoCover,
+      url: "https://github.com/Jason-TianrenTan/MBTAManager",
+      tags: ['C#', 'Xamarin', 'RESTful API']
     },
-  
+    {
+        title: 'CMM-Interpreter',
+        para: 'A C-Minus-Minus language interpreter based on LL1 grammar analysis and semantic analysis, supports various fundamental features of C++. ',
+        imageSrc: codeCover,
+        url: 'https://github.com/Jason-TianrenTan/CMMInterpreter',
+        tags: ['Java', 'Compilers', 'Semantic Analysis']
+    },
+    {
+        title: 'U-Shot',
+        para: 'Using AI to produce comprehensive photography analyzation and provide tips on improving your photography skills.',
+        imageSrc: 'https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        date: '2017-10',
+        tags: ['Android', 'Scene Recognition', 'Tensorflow']
+    },
+    {
+        title: 'RSS Feeder',
+        para: 'A personal RSS feed manager, allows you to access your subscriptions, manually importing local and remote resources, dribble notes on reading page.',
+        imageSrc: 'https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        date: '2018-10',
+        tags: ['Android', 'MVVP Design', 'JavaScript']
+    }
+    
     /*
     If You Want To Add More Project just Copy and Paste This At The End
     ,{
@@ -173,7 +205,17 @@ export default {
         img: androidIcon,
         para:
             "Android"
-    }
+    },
+    {
+        img: mySQLIcon,
+        para:
+            "MySQL"
+    },
+    {
+        img: springIcon,
+        para:
+            "Spring Boot"
+    },
   ],
 
   // End Skills Section --------------------------
