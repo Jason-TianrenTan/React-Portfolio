@@ -10,7 +10,9 @@ import javaIcon from "./images/skills/java.png"
 import nodejsIcon from "./images/skills/node-js.png"
 import vuejsIcon from "./images/skills/vue-js.png"
 import mySQLIcon from "./images/skills/mysql.png";
-import springIcon from "./images/skills/spring-boot.png";
+import springIcon from "./images/skills/spring-boot.svg";
+import mavenIcon from "./images/skills/maven.svg";
+import gitIcon from "./images/skills/git.png";
 
 // Social Icon
 import githubIcon from "./images/skills/github.svg"
