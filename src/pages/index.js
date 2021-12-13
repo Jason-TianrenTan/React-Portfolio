@@ -17,8 +17,6 @@ const IndexPage = () => (
     <Work></Work>
     <Skills></Skills>
     <TimeLine></TimeLine>
-    
-    <Promotion></Promotion>
     <Footer></Footer>
   </Layout>
 )

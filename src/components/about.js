@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react"
 import Fade from "react-reveal/Fade"
 import data from "../yourdata"
-import SyntaxHighlighter from "react-syntax-highlighter"
-import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import GithubInfo from "./GithubInfo"
 
 function getElapsedAge() {
   let birth = Date.parse("1/22/1998")
@@ -30,8 +29,8 @@ const About = () => {
             </Fade>
             <p>
               {data.aboutParaOne}
-              <br></br>
-              I am <span className="age-span">{getElapsedAge()}</span> years old.
+              <br></br>I am <span className="age-span">{getElapsedAge()}</span>{" "}
+              years old.
               <br></br>
               <br></br>
               {data.aboutParaTwo}
@@ -39,7 +38,6 @@ const About = () => {
               <br></br>
               {data.aboutParaThree}
             </p>
-
             <p>
               For more information, check out my{" "}
               <button onClick={() => scrollTo("#resume")}>
@@ -51,6 +49,7 @@ const About = () => {
             <img className="avatar" src={data.aboutImage} alt="about"></img>
           </div>
         </div>
+        <GithubInfo />
       </div>
     </div>
   )
