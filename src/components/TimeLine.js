@@ -40,18 +40,22 @@ const TimeLine = () => {
   })
 
   return (
-    <div className="timeline-container">
-      <Fade bottom cascade>
-        <h1>Timelines</h1>
-      </Fade>
-      <VerticalTimeline>
-        {timelineItems}
-        <VerticalTimelineElement
-          iconStyle={{ background: "transparent", boxShadow: "none" }}
-          icon={<img className="meIcon" src={data.meLogo} />}
-          date={<div className="vertical-date">{"Present"}</div>}
-        />
-      </VerticalTimeline>
+    <div className="section" id="timeline">
+      <div className="container colored">
+        <div className="timeline-container">
+          <Fade bottom cascade>
+            <h1>Timelines</h1>
+          </Fade>
+          <VerticalTimeline>
+            {timelineItems}
+            <VerticalTimelineElement
+              iconStyle={{ background: "transparent", boxShadow: "none" }}
+              icon={<img className="meIcon" src={data.meLogo} />}
+              date={<div className="vertical-date">{"Present"}</div>}
+            />
+          </VerticalTimeline>
+        </div>
+      </div>
     </div>
   )
 }

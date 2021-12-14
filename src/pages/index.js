@@ -9,14 +9,16 @@ import Skills from "../components/Skills"
 import Promotion from "../components/Promotion"
 import Footer from "../components/Footer"
 import TimeLine from "../components/TimeLine"
+import Resume from "../components/Resume"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Jason Tan's Portfolio" />
     <About></About>
-    <Work></Work>
     <Skills></Skills>
+    <Work></Work>
     <TimeLine></TimeLine>
+    <Resume></Resume>
     <Footer></Footer>
   </Layout>
 )

@@ -46,14 +46,17 @@ import linkedinIcon from "./images/contacts/linkedin.png";
 export default {
 
   //Languages
-  languages: [
-      "cn",
-      "en"
-  ],
+  languages: {
+      "cpp": "C++",
+      "java": "Java",
+      "js": "JavaScript"
+  },
+
   //Server url
   server_urls: {
-      repos: "http://localhost:8080/repos"
+      repos: "http://localhost:8080/repos/stats"
   },
+  
   //Logo
   logos:{
       logo:logoImg,
@@ -118,19 +121,9 @@ export default {
         date: '2018-10',
         tags: ['Android', 'MVVP Design', 'JavaScript']
     }
-    
-    /*
-    If You Want To Add More Project just Copy and Paste This At The End
-    ,{
-        title: 'Project Five',
-        para: 'Something Amazing',
-        imageSrc: "",
-        url: ''
-    }
-    */
+
   ],
 
-  // End Work Section -----------------------
 
   // About Secton --------------
   resumeLogo: resumeImg,
@@ -140,8 +133,10 @@ export default {
   aboutParaTwo:
     "I’m currently a grad student at UC Irvine majoring in Software Engineering. I received my Bachelors degree in SWE at Wuhan University, China. I’ve always had a strong passion in building stuff since a child, and I’ve always been fascinated by the countless possibilities we can realize with computers. I’m highly motivated with my work and receptive to new ideas. ",
   aboutParaThree:
-    "I have prior experience in Java, JS, React, Vue and many more. My goal is to become a full-stack engineer, right now I’m actively seeking summer internships and fulltime position.",
+    "I have prior experience in Java, JS, React, Vue and many more. My goal is to become a full-stack engineer, right now I’m actively seeking summer internships and fulltime positions.",
   aboutImage: avatar,
+
+  //Timeline Section -------------
   timelines: [
     {time: '2010', title: 'Start coding at age 12', description: 'Beginning with C++ using Visual C++ 6.0', badges:['C++']},
     {time: '2013.01', title: 'Multi-user Group Chat', description: 'Individually developed a TCP C/S framework multi-user group chat app, supporting rich text format and file transfer', badges:['Java','TCP/IP']},
@@ -157,13 +152,7 @@ export default {
     {time: '2020.09 - 2020.11', title: 'Software Development Co-op at Alibaba', description: 'Individually designed and realized frontend and backend of a data analysis subpage. Implemented Koa.js for data retrieval to apply a light-weighted but high efficent design.', badges: ['JS', 'Node.js', 'Vue.js', 'Koa.js'], icon: alibabaIcon}
   ],
   
-
-  //   End About Section ---------------------
-
   // Skills Section ---------------
-
-  //   Import Icons from the top and link it here
-
   skills: [
     {
       img: htmlIcon,

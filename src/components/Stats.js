@@ -3,7 +3,7 @@ import data from "../yourdata"
 import StatsCard from "./atoms/StatsCard"
 
 const Stats = () => {
-  const [codeLines, setCodeLines] = useState({})
+  const [codeStats, setCodeStats] = useState(null)
   useEffect(() => {
     getUserGithubInfo(data.server_urls.repos)
   }, [])
@@ -11,15 +11,16 @@ const Stats = () => {
   const getUserGithubInfo = url => {
     fetch(url)
       .then(res => res.json())
-      .then(data => setCodeLines(data))
+      .then(data => setCodeStats(data))
       .catch(error => console.log(error))
   }
 
   return (
+      !codeStats ? <p>Loading...</p> :
     <div className="stats-container">
-      {Object.keys(codeLines).map((_key, index) => (
+      {Object.keys(codeStats).map((_key, index) => (
         <div className="stats-wrapper">
-          <StatsCard key={index} lang={_key} num={codeLines[_key]} />
+          <StatsCard key={index} lang={_key} num={codeStats[_key]} />
         </div>
       ))}
     </div>
