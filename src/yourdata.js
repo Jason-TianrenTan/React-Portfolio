@@ -50,6 +50,10 @@ export default {
       "cn",
       "en"
   ],
+  //Server url
+  server_urls: {
+      repos: "http://localhost:8080/repos"
+  },
   //Logo
   logos:{
       logo:logoImg,

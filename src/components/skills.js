@@ -1,5 +1,6 @@
 import React from "react"
 import data from "../yourdata"
+import Stats from "./Stats"
 
 const Skills = () => {
   return (
@@ -16,6 +17,7 @@ const Skills = () => {
             ))}
           </div>
         </div>
+        <Stats />
       </div>
     </div>
   )

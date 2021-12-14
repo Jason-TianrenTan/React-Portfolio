@@ -1,9 +1,9 @@
 {
   "name": "react-portfolio-template",
   "private": true,
-  "description": "Portfolio Template For Awesome Peoples",
+  "description": "My React Portfolio",
   "version": "0.1.0",
-  "author": "Chetan Verma <hello@chetanverma.com>",
+  "author": "Jason Tan",
   "dependencies": {
     "gatsby": "^2.32.13",
     "gatsby-image": "^2.5.0",
@@ -18,12 +18,14 @@
     "node-sass": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-countup": "^6.1.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
     "react-syntax-highlighter": "^15.4.5",
-    "react-vertical-timeline-component": "^3.5.2"
+    "react-vertical-timeline-component": "^3.5.2",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "prettier": "2.1.2"
