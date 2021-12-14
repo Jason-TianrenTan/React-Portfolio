@@ -1,44 +1,31 @@
-.stats-card {
-    height: 250px;
-    display: flex;
+.stats-container {
+    width: 80vw;
+    margin-top: 10vh;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    .content {
-        p {
-            font-size: 18px;
-            color: darkgray;
-        }
-    }
-
-    .stats {
-
-    }
-
+    display: block;
     .stats-wrapper {
         width: 80vw;
         margin-top: 10vh;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        display: table-cell;
         h1 {
-          font-size: 3rem;
-          line-height: 20px;
+        font-size: 3rem;
+        line-height: 20px;
         }
-        .grid {
-          display: grid;
-          margin-top: 20px;
-          grid-template-columns: repeat(3, 1fr);
-          grid-gap: 10px;
-          @include media(">=phone", "<lgphone") {
-            grid-template-columns: 1fr;
-          }
-          @include media(">=lgphone", "<tablet") {
-            grid-template-columns: 1fr;
-          }
-          @include media(">=tablet", "<desktop") {
-            grid-template-columns: 1fr 1fr;
-          }
+
+        .stats-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .content {
+                p {
+                    font-size: 18px;
+                    color: darkgray;
+                }
+            }
+        
         }
-      }
+    }
 }

@@ -16,11 +16,12 @@ const Stats = () => {
   }
 
   return (
-    <div className="coding-stats">
-
-        {Object.keys(codeLines).map((_key, index) => (
+    <div className="stats-container">
+      {Object.keys(codeLines).map((_key, index) => (
+        <div className="stats-wrapper">
           <StatsCard key={index} lang={_key} num={codeLines[_key]} />
-        ))}
+        </div>
+      ))}
     </div>
   )
 }
