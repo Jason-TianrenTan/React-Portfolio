@@ -5,17 +5,24 @@ import Fade from "react-reveal/Fade"
 const Resume = () => {
   return (
     <div className="section" id="resume">
-      <div className="container">
-      <Fade bottom cascade>
+      <div className="resume-headers-container">
+        <div className="resume-headers">
+          <Fade bottom cascade>
             <h1>Resume</h1>
           </Fade>
-        <article>
-          <div className="education">
-            <div className="title">
-              <h3>Education</h3>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="resume-container">
+          <article>
+            <div className="education">
+              <div className="title">
+                <h3>Education</h3>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
     </div>
   )
