@@ -1,11 +1,13 @@
 import React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import Social from "./atoms/Social"
 
 const Navbar = () => {
   return (
     <div className="section">
       <div className="container">
         <div className="navbar-wrapper">
+          <Social />
           <div className="links-wrapper">
             <button onClick={() => scrollTo("#about")}>About</button>
             <button onClick={() => scrollTo("#skills")}>Skills</button>
