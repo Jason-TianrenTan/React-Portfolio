@@ -24,6 +24,7 @@
 
 h1 {
     font-family: 'Cinzel';
+    font-weight: normal;
 }
 
 body {
@@ -87,7 +88,14 @@ body {
 
 @font-face {
     font-family: 'Cinzel';
-    src: url('./fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+    src: url('./fonts/Cinzel/static/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('./fonts/Cinzel/static/Cinzel-Medium.ttf') format('truetype');
+    font-weight: bolder;
 }
 
 @font-face {
