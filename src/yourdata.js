@@ -44,12 +44,14 @@ import githubIcon from "./images/contacts/github.svg"
 import linkedinIcon from "./images/contacts/linkedin.png"
 
 export default {
-  //Languages
-  languages: {
-    cpp: "C++",
-    java: "Java",
-    js: "JavaScript",
-  },
+  //Stats
+  stats: [
+        {name: "C++", count: 1050},
+        {name: "Java", count: 229934},
+        {name: "JavaScript", count: 155441},
+        {name: "Commits", count: 283}
+  ],
+  
 
   //Server url
   server_urls: {

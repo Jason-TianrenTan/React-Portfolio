@@ -25,9 +25,9 @@ const StatsCard = ({ num, lang }) => {
           </CountUp>
         </div>
         <p>
-          {lang === "commits"
+          {lang === "Commits"
             ? "Total Commits"
-            : "Lines of " + data.languages[lang]}
+            : "Lines of " + lang}
         </p>
       </div>
     </div>
