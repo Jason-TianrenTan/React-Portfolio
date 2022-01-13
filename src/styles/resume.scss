@@ -88,21 +88,56 @@
 
   .education-wrapper {
     .degree-container {
-      margin-top:5vh;
+      margin-top: 5vh;
       padding: 0 2em 0 2em;
     }
     .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .degree {
+        justify-content: flex-start;
+        font-weight: 800;
+      }
+      .time {
+        margin-left: auto;
+        letter-spacing: normal;
+      }
+    }
+
+    .relevant-courses {
+      font-weight: 800;
+    }
+
+    .courses-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .course {
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+
+  .experience-wrapper {
+    .experience {
+      .header {
         width: 100%;
         display: flex;
         flex-direction: row;
-        .degree {
-            justify-content: flex-start;
-            font-weight: 800;
+        .company {
+          justify-content: flex-start;
+          font-weight: 800;
         }
-        .time {
-            margin-left: auto;
-            letter-spacing: normal;
+        .location {
+          margin-left: auto;
+          letter-spacing: normal;
         }
+      }
     }
   }
 }

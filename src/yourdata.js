@@ -290,7 +290,7 @@ export default {
       { name: "Education", scroll: "#education" },
       { name: "Experience", scroll: "#experience" },
       { name: "Projects", scroll: "#projects" },
-      { name: "Leaderships and Recognitions", scroll: "#recognitions" },
+      { name: "Leaderships/Recognitions", scroll: "#recognitions" },
     ],
     summary: [
       "Master of Software Engineering graduate with advanced software engineering training and project experiences",
@@ -299,10 +299,15 @@ export default {
       "Experience with Maven, Spring Boot, NodeJS, Koa, Vue.js, jQuery, React, OpenCV, Eigen, RxJava, RxAndroid"
     ],
     education: [
-        {school: "University of California, Irvine", time:"Expected December 2020", location: "California, USA", title: "Master of Software Engineering",
-           courses:['Concurrent Programming', 'Neutral Network Programming', 'Applied Information Retrieval', 'Distributed Software Architecture', 'Reverse Engineering/Modeling', 'Software Security and Dependability'], gpa: '4.00/4.00'},
+        {school: "University of California, Irvine", time:"Expected December 2022", location: "California, USA", title: "Master of Software Engineering",
+           courses:['Neutral Network Programming', 'Applied Information Retrieval', 'Distributed Software Architecture', 'Reverse Engineering/Modeling', 'Software Security and Dependability']},
         {school: "Wuhan University", time:"September 2016 - June 2020", location: "Hubei, China", title: "B.Eng, Software Engineering",
-            courses: ['C++ Programming', 'Discrete Mathematics', 'Data Structure/Algorithms', 'Object-oriented Programming']}
+            courses: ['Discrete Mathematics', 'Data Structure/Algorithms', 'Pattern Recognition', 'Software Architecture', 'Object-Orienterd Programming']}
+    ],
+    experience: [
+        {company: 'CertiK', location: 'New York City, USA', title: 'Frontend Developer', subtitle: 'Frontend Internship', time: 'June 2019 - August 2019',
+            content: ['Developed a Google Chrome plug-in for peer point testing in the CertiK Testnet using JavaScript and CSS',
+                    'Single handedly developed and restructured company webpage using React and Gatsby']}
     ]
   },
 

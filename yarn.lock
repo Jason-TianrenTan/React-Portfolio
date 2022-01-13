@@ -11216,6 +11216,11 @@ react-syntax-highlighter@^15.4.5:
     prismjs "^1.25.0"
     refractor "^3.2.0"
 
+react-timeless@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/react-timeless/-/react-timeless-0.3.1.tgz#a9c8ec50fd90dd0a9c3374e80dcf25627343ca2d"
+  integrity sha1-qcjsUP2Q3QqcM3ToDc8lYnNDyi0=
+
 react-vertical-timeline-component@^3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.5.2.tgz#fd2c34e130176f5c1f10e2e3468c14a1d74a7453"

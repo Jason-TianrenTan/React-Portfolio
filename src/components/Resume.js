@@ -44,17 +44,43 @@ const Resume = () => {
               <div className="title">
                 <h1>EDUCATION</h1>
               </div>
+              <hr />
               <div className="education-wrapper">
-                <hr />
                 {data.resume.education.map((education, index) => (
                   <article className="degree-container">
-                      <div className="header">
-                    <h3 class="degree">{education.title}</h3>
-                    <h3 class="time">{education.time}</h3>
+                    <div className="header">
+                      <h3 class="degree">{education.title}</h3>
+                      <h3 class="time">{education.time}</h3>
                     </div>
-                    <h4 class="school">{education.school}</h4>
-                    <h4>{education.location}</h4>
+                    <h4 class="school">
+                      {education.school + ", " + education.location}
+                    </h4>
+
+                    <h4 className="relevant-courses">Relevant Courses</h4>
+                    <div className="courses-wrapper">
+                      {education.courses.map((course, index) => (
+                        <h4 className="course">{course}</h4>
+                      ))}
+                    </div>
                   </article>
+                ))}
+              </div>
+            </div>
+
+            <div className="section" id="experience">
+              <div className="title">
+                <h1>EXPERIENCE</h1>
+              </div>
+              <hr />
+              <div className="experience-wrapper">
+                {data.resume.experience.map((experience, index) => (
+                  <div className="experience">
+                    <div className="header">
+                      <h3 class="company">{experience.company}</h3>
+                      <h3 class="location">{experience.location}</h3>
+                    </div>
+                    <div className="titles"></div>
+                  </div>
                 ))}
               </div>
             </div>
