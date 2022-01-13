@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Header from './Header';
+import Navbar from './navbar';
+import Header from './header';
 
 const NavHeaderContainer = () => {
     return (

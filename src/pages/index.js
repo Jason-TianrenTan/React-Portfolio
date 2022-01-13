@@ -3,13 +3,13 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 // Components
-import Work from "../components/Work"
-import About from "../components/About"
-import Skills from "../components/Skills"
-import Promotion from "../components/Promotion"
-import Footer from "../components/Footer"
-import TimeLine from "../components/TimeLine"
-import Resume from "../components/Resume"
+import Work from "../components/work"
+import About from "../components/about"
+import Skills from "../components/skills"
+import Promotion from "../components/promotion"
+import Footer from "../components/footer"
+import TimeLine from "../components/timeline"
+import Resume from "../components/resume"
 
 const IndexPage = () => (
   <Layout>

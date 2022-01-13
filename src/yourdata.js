@@ -34,8 +34,8 @@ import certikIcon from "./images/about/data-analysis.png"
 import alibabaIcon from "./images/about/web-development.png"
 
 //Project Images
-import openCVCover from "./images/projects/OpenCV.jpg"
-import xamarinCover from "./images/projects/Xamarin.jpg"
+import openCVCover from "./images/projects/opencv.jpg"
+import xamarinCover from "./images/projects/xamarin.jpg"
 import xamarinLogoCover from "./images/projects/xamarin-logo.png"
 import codeCover from "./images/projects/carbon.png"
 

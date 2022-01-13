@@ -1,6 +1,6 @@
 import React from "react"
 import data from "../yourdata"
-import Stats from "./Stats"
+import Stats from "./stats"
 
 const Skills = () => {
   return (
